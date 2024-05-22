@@ -12,7 +12,7 @@ var fs        = require("fs")
   , path      = require("path")
   , getopt    = require("node-getopt")
   , parser    = require("./logparser")
-  , keyboard  = require("./keyboard-impl")
+  , keyboard  = require("../js/keyboard-impl")
   , Canvas    = require("canvas")
   , cliConf   = [
     ['l' , 'logFile=ARG'  , 'Log file'],
@@ -34,7 +34,7 @@ var keyboardIndex = 0
   , containerSize
   , csvContent
   // outFile will be something like /tmp/u69o0276ivts8vvbj8ffuj6oc3-hello-0.png
-  , outFile = '/tmp/' + path.basename(args.logFile, '.log') + '-' + args.word + '-' + (+args.failed || 0) + '.png'
+  , outFile = 'C:/Users/gugu1/Documents/Github/swipetest/experiments/plots' + path.basename(args.logFile, '.log') + '-' + args.word + '-' + (+args.failed || 0) + '.png'
   ;
 
 console.log('Writing to %s', outFile)

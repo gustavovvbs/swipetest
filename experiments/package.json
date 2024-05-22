@@ -15,7 +15,7 @@
   "author": "Luis A. Leiva",
   "license": "MIT",
   "dependencies": {
-    "canvas": "^2.5.0",
+    "canvas": "^2.11.2",
     "fast-csv": "^3.4.0",
     "node-getopt": "^0.3.0"
   }
